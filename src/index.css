@@ -1,3 +1,27 @@
+:root {
+  --fw-padding: 0 88px;
+  --fw-padding-xy: 0 88px 48px 168px;
+  --fw-padding-xy-mobile: 180px 50px 24px;
+  --fw-padding-xy-mobile-lg: 0 50px 24px 50px;
+
+  --color-black: #000;
+  --color-white: #fffffa;
+  --color-lightBlue: #E9E7FB;
+  --color-blue: #1322D5;
+
+  --font-main: 'Circular';
+  --font-secondary: 'Inconsolata';
+}
+
+*,
+body,
+div {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: var(--color-lightBlue);
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
