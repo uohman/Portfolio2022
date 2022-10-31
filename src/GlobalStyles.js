@@ -23,7 +23,7 @@ export const InnerWrapper = styled.section`
 
 export const ContainerWhite = styled.section`
     background-color: var(--color-white);
-    padding: 50px 0;
+    padding: 40px 0;
 `
 
 export const Subheading = styled.h2`
@@ -32,7 +32,28 @@ export const Subheading = styled.h2`
     text-align: center;
     font-size: 30px;
     padding-bottom: 2vh;
-    color: var(--color-blue);
+    color: var(--color-accent);
+`
+
+export const StyledGrid = styled.section`
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    justify-content: center;
+    align-content: center;
+    gap: 30px;
+    margin: 50px auto;
+    max-width: 50vw;
+    
+
+    @media (max-width: 767.98px){
+        
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        justify-content: center;
+        align-content: center;
+        gap: 30px;
+        
+    }
 `
 
 export default GlobalStyles;

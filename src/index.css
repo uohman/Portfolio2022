@@ -6,8 +6,8 @@
 
   --color-black: #000;
   --color-white: #fffffa;
-  --color-lightBlue: #E9E7FB;
-  --color-blue: #1322D5;
+  --color-background: #E9E7FB;
+  --color-accent: #1322D5;
 
   --font-main: 'Circular Std', sans-serif;
   --font-secondary: 'Inconsolata', monospace;
@@ -28,7 +28,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: var(--color-lightBlue);
+  background-color: var(--color-background);
 }
 
 code {
