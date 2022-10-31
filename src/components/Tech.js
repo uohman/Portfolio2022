@@ -15,9 +15,10 @@ export const Tech = () => {
 };
 
 const SectionText = styled.p`
-    font-family: 'Inconsolata', monospace;
+    font-family: var(--font-secondary);
     font-weight: 400;
     text-align: center;
-    font-size: 20px;
+    font-size: 30px;
+    line-height: 35px;
     color: #000;
 `

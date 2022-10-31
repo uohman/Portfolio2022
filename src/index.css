@@ -9,8 +9,8 @@
   --color-lightBlue: #E9E7FB;
   --color-blue: #1322D5;
 
-  --font-main: 'Circular';
-  --font-secondary: 'Inconsolata';
+  --font-main: 'Circular Std', sans-serif;
+  --font-secondary: 'Inconsolata', monospace;
 }
 
 *,
@@ -19,7 +19,6 @@ div {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  background-color: var(--color-lightBlue);
 }
 
 body {
@@ -29,6 +28,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: var(--color-lightBlue);
 }
 
 code {

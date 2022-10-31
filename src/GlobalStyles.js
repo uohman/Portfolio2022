@@ -13,23 +13,26 @@ export const OuterWrapper = styled.section`
     display: flex;
     align-items: center;
     justify-content: center;
+    
 `
 
 export const InnerWrapper = styled.section`
-    width: 80%;
+    width: 65vw;
     margin: 0 auto;
 `
 
 export const ContainerWhite = styled.section`
-    background-color: #ffffff;
+    background-color: var(--color-white);
+    padding: 50px 0;
 `
 
 export const Subheading = styled.h2`
-    font-family: 'Circular Std', sans-serif;
+    font-family: var(--font-main);
     font-weight: 700;
     text-align: center;
-    font-size: 25px;
-    color: #1322D5;
+    font-size: 30px;
+    padding-bottom: 2vh;
+    color: var(--color-blue);
 `
 
 export default GlobalStyles;
