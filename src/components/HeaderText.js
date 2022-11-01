@@ -1,17 +1,20 @@
 import React from 'react'
 import styled from 'styled-components/macro'
+import { OuterWrapperBlue, InnerWrapper } from 'GlobalStyles';
 
 export const HeaderText = () => {
   return (
-    <>
-      <Heading>
+    <OuterWrapperBlue>
+      <InnerWrapper>
+        <Heading>
           Hello! Nice to meet you!
-      </Heading>
-      <BigText>
+        </Heading>
+        <BigText>
       I am a creative and experienced graphic designer with frontend developer skills.
       I’m all about problem solving and creating awesome, meaningful products for people to love.
-      </BigText>
-    </>
+        </BigText>
+      </InnerWrapper>
+    </OuterWrapperBlue>
   )
 };
 
@@ -21,7 +24,7 @@ const Heading = styled.h1`
     text-align: left;
     font-size: 60px;
     line-height: 60px;
-    margin-top: 45vh;
+    margin-top: 25vh;
     color: var(--color-accent);
 `
 

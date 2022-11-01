@@ -1,31 +1,33 @@
 import React from 'react'
 import projects from 'data.json'
-import { Subheading, StyledGrid } from 'GlobalStyles';
+import { OuterWrapperBlue, InnerWrapper, Subheading, StyledGrid } from 'GlobalStyles';
 import styled from 'styled-components/macro'
 
 export const FeaturedProjects = () => {
   return (
-    <>
-      <Subheading><span>Featured projects</span></Subheading>
-      <StyledGrid>
-        {projects.map((project) => (
-          <ProjectWrapper key={project.id}>
-            <a href={project.url} target="_blank" rel="noreferrer">
-              <div className="image-container">
-                <div className="project__image"><img src={project.img_src} alt="Project" /></div>
-                {/* <div className="after">{project.title}</div> */}
-              </div>
-              <div className="project__title">{project.title}</div>
-              <div className="project__description">{project.description}<a href={project.url_netlify}> → </a></div>
-            </a>
-            <StyledTags>
-              {project.tags.map((tag) => (
-                <li key={tag.id}>{tag.tech}</li>))}
-            </StyledTags>
-          </ProjectWrapper>
-        ))}
-      </StyledGrid>
-    </>
+    <OuterWrapperBlue>
+      <InnerWrapper>
+        <Subheading><span>Featured projects</span></Subheading>
+        <StyledGrid>
+          {projects.map((project) => (
+            <ProjectWrapper key={project.id}>
+              <a href={project.url} target="_blank" rel="noreferrer">
+                <div className="image-container">
+                  <div className="project__image"><img src={project.img_src} alt="Project" /></div>
+                  {/* <div className="after">{project.title}</div> */}
+                </div>
+                <div className="project__title">{project.title}</div>
+                <div className="project__description">{project.description}<a href={project.url_netlify}> → </a></div>
+              </a>
+              <StyledTags>
+                {project.tags.map((tag) => (
+                  <li key={tag.id}>{tag.tech}</li>))}
+              </StyledTags>
+            </ProjectWrapper>
+          ))}
+        </StyledGrid>
+      </InnerWrapper>
+    </OuterWrapperBlue>
   )
 };
 

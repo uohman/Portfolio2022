@@ -12,5 +12,5 @@ export const NameAndTitle = () => {
 
 const NameAndTitleContainer = styled.section`
     // outline: 1px solid red;
-    margin-top: 20px;
+    margin: 20px;
   `

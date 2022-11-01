@@ -8,22 +8,33 @@ const GlobalStyles = createGlobalStyle`
     }
 `
 
-export const OuterWrapper = styled.section`
+/* export const OuterWrapper = styled.section`
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    
+` */
+
+export const OuterWrapperBlue = styled.section`
+    background-color: var(--color-background);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 0;
 `
 
+export const OuterWrapperWhite = styled.section`
+    background-color: var(--color-white);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 0;
+`
 export const InnerWrapper = styled.section`
     width: 65vw;
     margin: 0 auto;
-`
-
-export const ContainerWhite = styled.section`
-    background-color: var(--color-white);
-    padding: 40px 0;
 `
 
 export const Subheading = styled.h2`

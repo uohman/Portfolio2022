@@ -1,5 +1,4 @@
 import React from 'react'
-import { OuterWrapper, InnerWrapper } from 'GlobalStyles'
 import { NameAndTitle } from 'components/NameAndTitle'
 import { Icons } from 'components/Icons'
 import { Tech } from 'components/Tech'
@@ -15,16 +14,12 @@ import { Contact } from 'components/Contact' */
 export const PortfolioWrapper = () => {
   return (
     <div>
-      <OuterWrapper>
-        <Icons />
-        <InnerWrapper>
-          <NameAndTitle />
-          <HeaderImage />
-          <HeaderText />
-          <Tech />
-          <FeaturedProjects />
-        </InnerWrapper>
-      </OuterWrapper>
+      <Icons />
+      <NameAndTitle />
+      <HeaderImage />
+      <HeaderText />
+      <Tech />
+      <FeaturedProjects />
     </div>
   )
 };
