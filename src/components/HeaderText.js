@@ -1,10 +1,10 @@
 import React from 'react'
 import styled from 'styled-components/macro'
-import { OuterWrapperBlue, InnerWrapper } from 'GlobalStyles';
+import { OuterWrapperBeige, InnerWrapper } from 'GlobalStyles';
 
 export const HeaderText = () => {
   return (
-    <OuterWrapperBlue>
+    <OuterWrapperBeige>
       <InnerWrapper>
         <Heading>
           Hello! Nice to meet you!
@@ -14,7 +14,7 @@ export const HeaderText = () => {
       I’m all about problem solving and creating awesome, meaningful products for people to love.
         </BigText>
       </InnerWrapper>
-    </OuterWrapperBlue>
+    </OuterWrapperBeige>
   )
 };
 

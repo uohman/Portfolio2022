@@ -15,7 +15,7 @@ const GlobalStyles = createGlobalStyle`
     justify-content: center;
 ` */
 
-export const OuterWrapperBlue = styled.section`
+export const OuterWrapperBeige = styled.section`
     background-color: var(--color-background);
     width: 100%;
     display: flex;

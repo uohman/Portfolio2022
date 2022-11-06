@@ -1,11 +1,11 @@
 import React from 'react'
 import styled from 'styled-components/macro'
-import { OuterWrapperBlue, InnerWrapper } from 'GlobalStyles';
+import { OuterWrapperBeige, InnerWrapper } from 'GlobalStyles';
 import img from 'Images/Portfolio-image.jpg'
 
 export const HeaderImage = () => {
   return (
-    <OuterWrapperBlue>
+    <OuterWrapperBeige>
       <InnerWrapper>
         <StyledImages>
           <img className="ProfileImage" src={img} alt="Ulrikas profile" />
@@ -13,7 +13,7 @@ export const HeaderImage = () => {
         </StyledImages>
 
       </InnerWrapper>
-    </OuterWrapperBlue>
+    </OuterWrapperBeige>
   )
 };
 

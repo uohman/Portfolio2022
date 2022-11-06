@@ -1,10 +1,10 @@
 import React from 'react'
-import { InnerWrapper, OuterWrapperBlue, Subheading } from 'GlobalStyles';
+import { InnerWrapper, OuterWrapperBeige, Subheading } from 'GlobalStyles';
 import styled from 'styled-components/macro'
 
 export const Skills = () => {
   return (
-    <OuterWrapperBlue>
+    <OuterWrapperBeige>
       <InnerWrapper>
         <Subheading><span>Skills</span></Subheading>
         <StyledSkills>
@@ -32,7 +32,7 @@ export const Skills = () => {
           </div>
         </StyledSkills>
       </InnerWrapper>
-    </OuterWrapperBlue>
+    </OuterWrapperBeige>
   )
 };
 

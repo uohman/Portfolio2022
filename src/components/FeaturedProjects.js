@@ -1,11 +1,11 @@
 import React from 'react'
 import projects from 'data.json'
-import { OuterWrapperBlue, InnerWrapper, Subheading, Title } from 'GlobalStyles';
+import { OuterWrapperBeige, InnerWrapper, Subheading, Title } from 'GlobalStyles';
 import styled from 'styled-components/macro'
 
 export const FeaturedProjects = () => {
   return (
-    <OuterWrapperBlue>
+    <OuterWrapperBeige>
       <InnerWrapper>
         <Subheading><span>Featured projects</span></Subheading>
 
@@ -31,7 +31,7 @@ export const FeaturedProjects = () => {
         ))}
 
       </InnerWrapper>
-    </OuterWrapperBlue>
+    </OuterWrapperBeige>
   )
 };
 
@@ -45,7 +45,7 @@ export const ProjectWrapper = styled.article`
     flex-direction: row-reverse;
     }
 
-    .image-container{
+/*     .image-container{
                 position: relative;
             }
 
@@ -65,7 +65,7 @@ export const ProjectWrapper = styled.article`
                 display: block;
                 display: none;
                 color: #FFF;
-            }
+            } */
 
           /*   .after{
                 color: white;
