@@ -3,13 +3,11 @@ import { NameAndTitle } from 'components/NameAndTitle'
 import { Icons } from 'components/Icons'
 import { Tech } from 'components/Tech'
 import { HeaderText } from 'components/HeaderText'
-import { HeaderImage } from './HeaderImage'
-import { FeaturedProjects } from './FeaturedProjects'
-
-/*
 import { Thoughts } from 'components/Thoughts'
 import { Skills } from 'components/Skills'
-import { Contact } from 'components/Contact' */
+import { Contact } from 'components/Contact'
+import { HeaderImage } from './HeaderImage'
+import { FeaturedProjects } from './FeaturedProjects'
 
 export const PortfolioWrapper = () => {
   return (
@@ -20,6 +18,9 @@ export const PortfolioWrapper = () => {
       <HeaderText />
       <Tech />
       <FeaturedProjects />
+      <Thoughts />
+      <Skills />
+      <Contact />
     </div>
   )
 };

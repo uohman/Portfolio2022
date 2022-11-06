@@ -1,6 +1,6 @@
 import React from 'react'
 import projects from 'data.json'
-import { OuterWrapperBlue, InnerWrapper, Subheading, StyledGrid } from 'GlobalStyles';
+import { OuterWrapperBlue, InnerWrapper, Subheading } from 'GlobalStyles';
 import styled from 'styled-components/macro'
 
 export const FeaturedProjects = () => {
@@ -8,32 +8,40 @@ export const FeaturedProjects = () => {
     <OuterWrapperBlue>
       <InnerWrapper>
         <Subheading><span>Featured projects</span></Subheading>
-        <StyledGrid>
-          {projects.map((project) => (
-            <ProjectWrapper key={project.id}>
-              <a href={project.url} target="_blank" rel="noreferrer">
-                <div className="image-container">
-                  <div className="project__image"><img src={project.img_src} alt="Project" /></div>
-                  {/* <div className="after">{project.title}</div> */}
-                </div>
-                <div className="project__title">{project.title}</div>
-                <div className="project__description">{project.description}<a href={project.url_netlify}> → </a></div>
-              </a>
+
+        {projects.map((project) => (
+          <ProjectWrapper key={project.id}>
+            <a href={project.url} target="_blank" rel="noreferrer">
+              <div className="image-container">
+                <div className="project__image"><img src={project.img_src} alt="Project" /></div>
+                {/* <div className="after">{project.title}</div> */}
+              </div>
+            </a>
+            <StyledText>
+              <div className="project__title">{project.title}</div>
+              <div className="project__description">{project.description}<a href={project.url_netlify}> → </a></div>
               <StyledTags>
                 {project.tags.map((tag) => (
                   <li key={tag.id}>{tag.tech}</li>))}
               </StyledTags>
-            </ProjectWrapper>
-          ))}
-        </StyledGrid>
+            </StyledText>
+          </ProjectWrapper>
+        ))}
+
       </InnerWrapper>
     </OuterWrapperBlue>
   )
 };
 
 export const ProjectWrapper = styled.article`
-    width: 350px;
-    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 5vh 0;
+
+    &:nth-child(odd) {
+    flex-direction: row-reverse;
+    }
    
     a {
         text-decoration: none;
@@ -72,29 +80,33 @@ export const ProjectWrapper = styled.article`
             } */
 
     .project__image img{
-            width: 350px;
+            width: 32vw;
             height: auto;
         }
 
             .project__title{
                     font-family: var(--font-secondary);
                     font-weight: 400;
-                    text-transform: uppercase;
                     text-align: left;
-                    font-size: 15px;
-                    color: #E8415E;
-                    padding-top: 20px;
+                    font-size: 20px;
+                    border-bottom: 2px solid;
                 }
 
             .project__description{
                     font-family: var(--font-secondary);
                     font-weight: 400;
                     text-align: left;
-                    font-size: 15px;
-                    line-height: 25px;
+                    font-size: 18px;
+                    line-height: 20px;
                     padding: 10px 0;
                 }
 
+`
+export const StyledText = styled.div`
+    width: 28vw;
+    display: flex;
+    flex-direction: column;
+    
 `
 
 export const StyledTags = styled.div`
@@ -104,9 +116,9 @@ export const StyledTags = styled.div`
     li {
     font-family: var(--font-secondary);
     font-weight: 400;
-    background-color: #f6d0e4;
+    background-color: var(--color-lighterAccent);
     text-decoration: none;
-    font-size: 12px; 
+    font-size: 14px; 
     line-height: 12px;
     padding: 3px 10px;
     margin: 3px 6px 10px 0;

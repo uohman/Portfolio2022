@@ -22,8 +22,8 @@ const IconsWrapper = styled.div`
     display: flex;
     flex-direction: column;
     position: fixed;
-    right: 20px;
-    top: 50px;
+    right: 3vh;
+    top: 11vh;
 
     img {
         width: 25px;

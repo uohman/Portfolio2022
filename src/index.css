@@ -5,9 +5,10 @@
   --fw-padding-xy-mobile-lg: 0 50px 24px 50px;
 
   --color-black: #000;
-  --color-white: #fffffa;
-  --color-background: #E9E7FB;
-  --color-accent: #1322D5;
+  --color-white: #ffff;
+  --color-background: #f9f5e7;
+  --color-accent: #db4f60;
+  --color-lighterAccent: #BDCBFF;
 
   --font-main: 'Circular Std', sans-serif;
   --font-secondary: 'Inconsolata', monospace;

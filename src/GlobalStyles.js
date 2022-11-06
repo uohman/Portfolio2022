@@ -46,24 +46,32 @@ export const Subheading = styled.h2`
     color: var(--color-accent);
 `
 
+export const Description = styled.p`
+    font-family: var(--font-secondary);
+    font-weight: 400;
+    text-align: left;
+    font-size: 18px;
+    line-height: 20px;
+    padding: 10px 0;    
+`
+
 export const StyledGrid = styled.section`
     display: grid;
-    grid-template-columns: 1fr 1fr; 
+    grid-template-columns: 1fr 1fr;
     justify-content: center;
     align-content: center;
     gap: 30px;
-    margin: 50px auto;
+    margin: 0 auto;
     max-width: 50vw;
-    
 
     @media (max-width: 767.98px){
-        
+
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         justify-content: center;
         align-content: center;
         gap: 30px;
-        
+
     }
 `
 

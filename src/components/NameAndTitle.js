@@ -3,14 +3,30 @@ import styled from 'styled-components/macro'
 
 export const NameAndTitle = () => {
   return (
-    <NameAndTitleContainer>
-      <h4>Ulrika Öhman</h4>
-      <h5>— frontend developer & graphic designer</h5>
-    </NameAndTitleContainer>
+    <>
+      <NameAndTitleContainer>
+        <h4>Ulrika Öhman</h4>
+        <h5>— frontend developer & graphic designer</h5>
+      </NameAndTitleContainer>
+      <hr
+        style={{
+          border: '1px solid var(--color-accent)'
+        }} />
+    </>
   )
 };
 
 const NameAndTitleContainer = styled.section`
     // outline: 1px solid red;
-    margin: 20px;
+    margin: 3vh 3vh 1.5vh;
+
+    h4 {
+      color: var(--color-accent);
+      font-size: 1em;
+    }
+
+    h5 {
+      color: var(--color-accent);
+      font-size: 1em;
+    }
   `
