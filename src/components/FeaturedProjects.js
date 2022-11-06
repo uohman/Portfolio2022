@@ -1,6 +1,6 @@
 import React from 'react'
 import projects from 'data.json'
-import { OuterWrapperBlue, InnerWrapper, Subheading } from 'GlobalStyles';
+import { OuterWrapperBlue, InnerWrapper, Subheading, Title } from 'GlobalStyles';
 import styled from 'styled-components/macro'
 
 export const FeaturedProjects = () => {
@@ -14,12 +14,14 @@ export const FeaturedProjects = () => {
             <a href={project.url} target="_blank" rel="noreferrer">
               <div className="image-container">
                 <div className="project__image"><img src={project.img_src} alt="Project" /></div>
-                {/* <div className="after">{project.title}</div> */}
+                <div className="after" />
               </div>
             </a>
             <StyledText>
-              <div className="project__title">{project.title}</div>
-              <div className="project__description">{project.description}<a href={project.url_netlify}> → </a></div>
+              <StyledTitleAnchor href={project.url} target="_blank" rel="noreferrer">
+                <Title>{project.title}</Title>
+              </StyledTitleAnchor>
+              <div className="project__description">{project.description}(Watch live demo <StyledLiveDemoAnchor href={project.url_netlify}>here</StyledLiveDemoAnchor>.)</div>
               <StyledTags>
                 {project.tags.map((tag) => (
                   <li key={tag.id}>{tag.tech}</li>))}
@@ -42,17 +44,12 @@ export const ProjectWrapper = styled.article`
     &:nth-child(odd) {
     flex-direction: row-reverse;
     }
-   
-    a {
-        text-decoration: none;
-        color: black;
-    }
 
     .image-container{
                 position: relative;
             }
 
-/*             .image-container .after {
+             .image-container .after {
                 position: absolute;
                 display: flex;
                 justify-content: center;
@@ -60,8 +57,8 @@ export const ProjectWrapper = styled.article`
                 top: 0;
                 left: 0;
                 width: 100%;
-                height: 203.72px;
-                background: #60183575;
+                height: 98.5%;
+                background: #eea1ab75;
             }
 
             .image-container:hover .after {
@@ -70,27 +67,19 @@ export const ProjectWrapper = styled.article`
                 color: #FFF;
             }
 
-            .after{
+          /*   .after{
                 color: white;
                 font-family: var(--font-secondary);
                 font-weight: 400;
                 font-size: 15px;
                 text-transform: uppercase;
                 text-align: center;
-            } */
+            }  */
 
     .project__image img{
             width: 32vw;
             height: auto;
         }
-
-            .project__title{
-                    font-family: var(--font-secondary);
-                    font-weight: 400;
-                    text-align: left;
-                    font-size: 20px;
-                    border-bottom: 2px solid;
-                }
 
             .project__description{
                     font-family: var(--font-secondary);
@@ -106,7 +95,14 @@ export const StyledText = styled.div`
     width: 28vw;
     display: flex;
     flex-direction: column;
-    
+`
+
+export const StyledTitleAnchor = styled.a`
+    text-decoration: none;
+`
+
+export const StyledLiveDemoAnchor = styled.a`
+    color: black;
 `
 
 export const StyledTags = styled.div`

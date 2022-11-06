@@ -32,10 +32,17 @@ const StyledImages = styled.section`
 
   .Stamp {
     position: absolute;
-    width: 150px;
-    height: 150px;
+    width: 140px;
+    height: 140px;
     right: 0;
-    top: 140px;
+    top: 130px;
     float: right;
+    transition: all 0.6s ease-in-out 0s;
+
+    :hover {
+      cursor: default;
+    transform: rotate(180deg);
+    transition: all 0.6s ease-in-out 0s;
+    }
   }
 `
