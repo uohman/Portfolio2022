@@ -3,7 +3,7 @@ import projects from 'data.json'
 import { OuterWrapperBeige, InnerWrapper, Subheading, Title } from 'GlobalStyles';
 import styled from 'styled-components/macro'
 
-export const FeaturedProjects = () => {
+export const FrontendProjects = () => {
   return (
     <OuterWrapperBeige>
       <InnerWrapper>

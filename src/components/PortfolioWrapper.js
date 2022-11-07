@@ -7,7 +7,7 @@ import { Thoughts } from 'components/Thoughts'
 import { Skills } from 'components/Skills'
 import { Contact } from 'components/Contact'
 import { HeaderImage } from './HeaderImage'
-import { FeaturedProjects } from './FeaturedProjects'
+import { FrontendProjects } from './FrontendProjects'
 
 export const PortfolioWrapper = () => {
   return (
@@ -17,7 +17,7 @@ export const PortfolioWrapper = () => {
       <HeaderImage />
       <HeaderText />
       <Tech />
-      <FeaturedProjects />
+      <FrontendProjects />
       <Thoughts />
       <Skills />
       <Contact />
