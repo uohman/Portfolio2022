@@ -28,6 +28,7 @@ const StyledImages = styled.section`
     border-radius: 50%;
     object-fit: cover;
     float: right;
+    margin-top: 16vh;
   }
 
   .Stamp {
@@ -35,7 +36,7 @@ const StyledImages = styled.section`
     width: 140px;
     height: 140px;
     right: 0;
-    top: 130px;
+    top: 32vh;
     float: right;
     transition: all 0.6s ease-in-out 0s;
 

@@ -1,13 +1,19 @@
 import React from 'react'
 import projects from 'data.json'
-import { OuterWrapperBeige, InnerWrapper, Subheading, Title } from 'GlobalStyles';
+import { OuterWrapperBeige, InnerWrapper, Subheading, SecondSubheading, Title, Button } from 'GlobalStyles';
 import styled from 'styled-components/macro'
 
 export const FrontendProjects = () => {
   return (
     <OuterWrapperBeige>
+
       <InnerWrapper>
+        <ButtonWrapper>
+          <Button>Frontend development</Button>
+          <Button>Graphic design</Button>
+        </ButtonWrapper>
         <Subheading><span>Featured projects</span></Subheading>
+        <SecondSubheading>Frontend development</SecondSubheading>
 
         {projects.map((project) => (
           <ProjectWrapper key={project.id}>
@@ -34,6 +40,12 @@ export const FrontendProjects = () => {
     </OuterWrapperBeige>
   )
 };
+
+export const ButtonWrapper = styled.div`
+display: flex;
+    align-items: center;
+    justify-content: center;
+`
 
 export const ProjectWrapper = styled.article`
     display: flex;

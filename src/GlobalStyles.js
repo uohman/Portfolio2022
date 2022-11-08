@@ -21,7 +21,7 @@ export const OuterWrapperBeige = styled.section`
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 60px 0;
+    padding: 0 0 8vh;
 `
 
 export const OuterWrapperWhite = styled.section`
@@ -30,7 +30,7 @@ export const OuterWrapperWhite = styled.section`
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 60px 0;
+    padding: 0 0 60px;
 `
 export const InnerWrapper = styled.section`
     width: 65vw;
@@ -42,6 +42,18 @@ export const Subheading = styled.h2`
     font-weight: 700;
     text-align: center;
     font-size: 30px;
+    margin-top: 8vh;
+    padding-bottom: 2vh;
+    color: var(--color-accent);
+`
+
+export const SecondSubheading = styled.h3`
+    font-family: var(--font-main);
+    font-weight: 400;
+    text-align: center;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
     padding-bottom: 2vh;
     color: var(--color-accent);
 `
@@ -85,6 +97,17 @@ export const StyledGrid = styled.section`
         gap: 30px;
 
     }
+`
+
+export const Button = styled.button`
+    background-color: var(--color-accent);
+    color: var(--color-white);
+    border-style: none;
+    padding: 1vh 2vw;
+    font-family: var(--font-main);
+    font-weight: 700;
+    font-size: 18px;
+    margin: 0 10px;
 `
 
 export default GlobalStyles;
