@@ -24,7 +24,7 @@ const Heading = styled.h1`
     text-align: left;
     font-size: 60px;
     line-height: 60px;
-    margin-top: 40vh;
+    margin-top: 44vh;
     color: var(--color-accent);
 `
 

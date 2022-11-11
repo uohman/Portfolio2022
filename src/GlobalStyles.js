@@ -21,7 +21,7 @@ export const OuterWrapperBeige = styled.section`
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 0 0 8vh;
+    padding: 0 0 10vh;
 `
 
 export const OuterWrapperWhite = styled.section`
@@ -30,7 +30,7 @@ export const OuterWrapperWhite = styled.section`
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 0 0 60px;
+    padding: 0 0 10vh;
 `
 export const InnerWrapper = styled.section`
     width: 65vw;
@@ -42,7 +42,7 @@ export const Subheading = styled.h2`
     font-weight: 700;
     text-align: center;
     font-size: 30px;
-    margin-top: 8vh;
+    margin-top: 10vh;
     padding-bottom: 2vh;
     color: var(--color-accent);
 `
@@ -95,7 +95,6 @@ export const StyledGrid = styled.section`
         justify-content: center;
         align-content: center;
         gap: 30px;
-
     }
 `
 
@@ -108,6 +107,10 @@ export const Button = styled.button`
     font-weight: 700;
     font-size: 18px;
     margin: 0 10px;
+
+    :hover {
+        background-color: var(--color-lighterAccent);
+    }
 `
 
 export default GlobalStyles;
