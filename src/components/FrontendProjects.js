@@ -1,19 +1,18 @@
 import React from 'react'
 import projects from 'data.json'
-import { OuterWrapperBeige, InnerWrapper, Subheading, SecondSubheading, Title, Button } from 'GlobalStyles';
+import { OuterWrapperBeige, InnerWrapper, Title } from 'GlobalStyles';
 import styled from 'styled-components/macro'
 
 export const FrontendProjects = () => {
   return (
     <OuterWrapperBeige>
-
       <InnerWrapper>
-        <ButtonWrapper>
-          <Button>Frontend development</Button>
-          <Button>Graphic design</Button>
-        </ButtonWrapper>
-        <Subheading><span>Featured projects</span></Subheading>
-        <SecondSubheading>Frontend development</SecondSubheading>
+        {/* <Subheading><span>Featured projects</span></Subheading> */}
+        {/* <SecondSubheading>Frontend development</SecondSubheading> */}
+        {/* <ButtonWrapper>
+          <button type="button" onClick={handleChange}>Graphic</button>
+          <button type="button" onClick={handleChange}>Frontend</button>
+        </ButtonWrapper> */}
 
         {projects.map((project) => (
           <ProjectWrapper key={project.id}>
@@ -27,7 +26,7 @@ export const FrontendProjects = () => {
               <StyledTitleAnchor href={project.url} target="_blank" rel="noreferrer">
                 <Title>{project.title}</Title>
               </StyledTitleAnchor>
-              <div className="project__description">{project.description}(Watch live demo <StyledLiveDemoAnchor href={project.url_netlify}>here</StyledLiveDemoAnchor>.)</div>
+              <div className="project__description">{project.description}<br />(Watch live demo <StyledLiveDemoAnchor href={project.url_netlify}>here</StyledLiveDemoAnchor>.)</div>
               <StyledTags>
                 {project.tags.map((tag) => (
                   <li key={tag.id}>{tag.tech}</li>))}
@@ -42,7 +41,7 @@ export const FrontendProjects = () => {
 };
 
 export const ButtonWrapper = styled.div`
-display: flex;
+    display: flex;
     align-items: center;
     justify-content: center;
 `

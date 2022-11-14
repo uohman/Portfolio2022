@@ -1,25 +1,92 @@
 import React from 'react'
-// import projects from 'data.json'
-import { OuterWrapperBeige, InnerWrapper, Subheading, SecondSubheading } from 'GlobalStyles';
+import projects from 'data.json'
+import { OuterWrapperBeige, InnerWrapper, Title } from 'GlobalStyles';
 import styled from 'styled-components/macro'
 
 export const GraphicDesignProjects = () => {
   return (
     <OuterWrapperBeige>
       <InnerWrapper>
-        <Subheading><span>Featured projects</span></Subheading>
-        <SecondSubheading>Graphic design</SecondSubheading>
+        <h2>Graphic design</h2>
+        {/* <Subheading><span>Featured projects</span></Subheading> */}
+        {/* <SecondSubheading>Frontend development</SecondSubheading> */}
+        {/* <ButtonWrapper>
+          <button type="button" onClick={handleChange}>Graphic</button>
+          <button type="button" onClick={handleChange}>Frontend</button>
+        </ButtonWrapper> */}
+
+        {projects.map((project) => (
+          <ProjectWrapper key={project.id}>
+            <a href={project.url} target="_blank" rel="noreferrer">
+              <div className="image-container">
+                <div className="project__image"><img src={project.img_src} alt="Project" /></div>
+                <div className="after" />
+              </div>
+            </a>
+            <StyledText>
+              <StyledTitleAnchor href={project.url} target="_blank" rel="noreferrer">
+                <Title>{project.title}</Title>
+              </StyledTitleAnchor>
+              <div className="project__description">{project.description}(Watch live demo <StyledLiveDemoAnchor href={project.url_netlify}>here</StyledLiveDemoAnchor>.)</div>
+              <StyledTags>
+                {project.tags.map((tag) => (
+                  <li key={tag.id}>{tag.tech}</li>))}
+              </StyledTags>
+            </StyledText>
+          </ProjectWrapper>
+        ))}
 
       </InnerWrapper>
     </OuterWrapperBeige>
   )
 };
 
+export const ButtonWrapper = styled.div`
+    display: flex;
+    align-items: center;
+    justify-content: center;
+`
+
 export const ProjectWrapper = styled.article`
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin: 5vh 0;
+
+    &:nth-child(odd) {
+    flex-direction: row-reverse;
+    }
+
+/*     .image-container{
+                position: relative;
+            }
+
+             .image-container .after {
+                position: absolute;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 98.5%;
+                background: #eea1ab75;
+            }
+
+            .image-container:hover .after {
+                display: block;
+                display: none;
+                color: #FFF;
+            } */
+
+          /*   .after{
+                color: white;
+                font-family: var(--font-secondary);
+                font-weight: 400;
+                font-size: 15px;
+                text-transform: uppercase;
+                text-align: center;
+            }  */
 
     .project__image img{
             width: 32vw;

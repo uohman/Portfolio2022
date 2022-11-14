@@ -98,19 +98,4 @@ export const StyledGrid = styled.section`
     }
 `
 
-export const Button = styled.button`
-    background-color: var(--color-accent);
-    color: var(--color-white);
-    border-style: none;
-    padding: 1vh 2vw;
-    font-family: var(--font-main);
-    font-weight: 700;
-    font-size: 18px;
-    margin: 0 10px;
-
-    :hover {
-        background-color: var(--color-lighterAccent);
-    }
-`
-
 export default GlobalStyles;
