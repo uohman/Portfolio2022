@@ -1,5 +1,5 @@
 import React from 'react'
-import { InnerWrapper, OuterWrapperWhite, Subheading, Title, Description, StyledGrid } from 'GlobalStyles';
+import { InnerWrapper, OuterWrapperWhite, Subheading, Description, StyledGrid } from 'GlobalStyles';
 import styled from 'styled-components/macro'
 import thoughtOneImage from 'Images/My-thoughts-1.png'
 import placeHolderImage from 'Images/Placeholder-img.png'
@@ -68,4 +68,16 @@ export const ItemWrapper = styled.div`
         color: black;
     }
 
+`
+
+export const Title = styled.h3`
+    font-family: var(--font-main);
+    font-weight: 700;
+    font-size: 22px;
+    text-align: left;
+    color: var(--color-accent);
+
+    :hover {
+      color: var(--color-lighterAccent);
+    }
 `

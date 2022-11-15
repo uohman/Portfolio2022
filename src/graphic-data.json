@@ -1,0 +1,45 @@
+[
+    {
+      "title": "Eden flowers",
+      "id": 1,
+      "description": "Graphic profile and logotype for Eden Flowers, an online floristry. Graphic profile and logotype for Eden Flowers, an online floristry.",
+      "client": "Eden flowers",
+      "whatIDid": "Branding suite, logotype",
+      "images": [
+        {
+        "id": 1,
+        "img_src": "/Images/Eden-flowers-1.png"
+        },
+        {
+        "id": 2,
+        "tech": "/Images/Eden-flowers-2.png"
+        },
+        {
+        "id": 3,
+        "tech": ""
+        }
+    ]
+    },
+    {
+        "title": "De Bergtagna",
+        "id": 2,
+        "description": "Album cover, booklet and label for “De Bergtagna” by Ostrobothnia Jazz Sextet.",
+        "client": "Svenska litteratursällskapet i Finland/Finlands svenska folkmusikinstitut",
+        "whatIDid": "Layout",
+        "images": [
+          {
+          "id": 1,
+          "img_src": "/Images/De-bergtagna-1.png"
+          },
+          {
+          "id": 2,
+          "tech": "/Images/De-bergtagna-2.png"
+          },
+          {
+          "id": 3,
+          "tech": "/Images/De-bergtagna-3.png"
+          }
+      ]
+      }
+
+  ]

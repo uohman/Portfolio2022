@@ -1,41 +1,36 @@
 import React from 'react'
-import projects from 'data.json'
-import { OuterWrapperBeige, InnerWrapper, Title } from 'GlobalStyles';
+import projects from 'graphic-data.json'
+import { OuterWrapperBeige, InnerWrapper } from 'GlobalStyles';
 import styled from 'styled-components/macro'
 
 export const GraphicDesignProjects = () => {
   return (
     <OuterWrapperBeige>
       <InnerWrapper>
-        <h2>Graphic design</h2>
-        {/* <Subheading><span>Featured projects</span></Subheading> */}
-        {/* <SecondSubheading>Frontend development</SecondSubheading> */}
-        {/* <ButtonWrapper>
-          <button type="button" onClick={handleChange}>Graphic</button>
-          <button type="button" onClick={handleChange}>Frontend</button>
-        </ButtonWrapper> */}
-
         {projects.map((project) => (
           <ProjectWrapper key={project.id}>
-            <a href={project.url} target="_blank" rel="noreferrer">
-              <div className="image-container">
-                <div className="project__image"><img src={project.img_src} alt="Project" /></div>
-                <div className="after" />
-              </div>
-            </a>
-            <StyledText>
-              <StyledTitleAnchor href={project.url} target="_blank" rel="noreferrer">
-                <Title>{project.title}</Title>
-              </StyledTitleAnchor>
-              <div className="project__description">{project.description}(Watch live demo <StyledLiveDemoAnchor href={project.url_netlify}>here</StyledLiveDemoAnchor>.)</div>
-              <StyledTags>
+            <div className="image-container">
+              {project.images.map((image) => (
+                <div className="project__image" key={image.id}><img src={image.img_src} alt="Project" /></div>
+              ))}
+            </div>
+
+            <Title>{project.title}</Title>
+            <Column>
+
+              <Subtitle>Client:</Subtitle><Text>{project.client}</Text>
+              <Subtitle>What I did:</Subtitle><Text>{project.whatIDid}</Text>
+            </Column>
+            <Column>
+              <Text>{project.description}</Text>
+            </Column>
+            {/* <StyledTags>
                 {project.tags.map((tag) => (
                   <li key={tag.id}>{tag.tech}</li>))}
-              </StyledTags>
-            </StyledText>
+              </StyledTags> */}
+
           </ProjectWrapper>
         ))}
-
       </InnerWrapper>
     </OuterWrapperBeige>
   )
@@ -49,86 +44,49 @@ export const ButtonWrapper = styled.div`
 
 export const ProjectWrapper = styled.article`
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin: 5vh 0;
-
-    &:nth-child(odd) {
-    flex-direction: row-reverse;
-    }
-
-/*     .image-container{
-                position: relative;
-            }
-
-             .image-container .after {
-                position: absolute;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 98.5%;
-                background: #eea1ab75;
-            }
-
-            .image-container:hover .after {
-                display: block;
-                display: none;
-                color: #FFF;
-            } */
-
-          /*   .after{
-                color: white;
-                font-family: var(--font-secondary);
-                font-weight: 400;
-                font-size: 15px;
-                text-transform: uppercase;
-                text-align: center;
-            }  */
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 5vh 0; 
 
     .project__image img{
-            width: 32vw;
+            width: 100%;
             height: auto;
         }
-
-            .project__description{
-                    font-family: var(--font-secondary);
-                    font-weight: 400;
-                    text-align: left;
-                    font-size: 18px;
-                    line-height: 20px;
-                    padding: 10px 0;
-                }
-
 `
-export const StyledText = styled.div`
-    width: 28vw;
+
+export const Column = styled.div`
+    /* width: 30vw; */
     display: flex;
     flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
 `
 
-export const StyledTitleAnchor = styled.a`
-    text-decoration: none;
+export const Title = styled.h3`
+    font-family: var(--font-main);
+    font-weight: 700;
+    font-size: 22px;
+    text-align: left;
+    color: var(--color-accent);
+    width: 100%;
+    margin-bottom: 10px;
 `
 
-export const StyledLiveDemoAnchor = styled.a`
-    color: black;
-`
-
-export const StyledTags = styled.div`
-    display: flex;
-    list-style: none;
-
-    li {
+export const Subtitle = styled.h4`
     font-family: var(--font-secondary);
     font-weight: 400;
-    background-color: var(--color-lighterAccent);
-    text-decoration: none;
-    font-size: 14px; 
-    line-height: 12px;
-    padding: 3px 10px;
-    margin: 3px 6px 10px 0;
-    }  
+    font-size: 18px;
+    text-align: left;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+`
+
+export const Text = styled.p`
+    font-family: var(--font-secondary);
+    font-weight: 400;
+    text-align: left;
+    font-size: 18px;
+    line-height: 20px;
+    padding: 0 0 10px; 
 `

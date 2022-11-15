@@ -1,6 +1,6 @@
 import React from 'react'
 import projects from 'data.json'
-import { OuterWrapperBeige, InnerWrapper, Title } from 'GlobalStyles';
+import { OuterWrapperBeige, InnerWrapper } from 'GlobalStyles';
 import styled from 'styled-components/macro'
 
 export const FrontendProjects = () => {
@@ -102,6 +102,19 @@ export const ProjectWrapper = styled.article`
                 }
 
 `
+
+export const Title = styled.h3`
+    font-family: var(--font-main);
+    font-weight: 700;
+    font-size: 22px;
+    text-align: left;
+    color: var(--color-accent);
+
+    :hover {
+      color: var(--color-lighterAccent);
+    }
+`
+
 export const StyledText = styled.div`
     width: 28vw;
     display: flex;

@@ -12,8 +12,8 @@ import 'index.css'
 
 export const FeaturedProjects = () => {
   const [buttons, setButtons] = useState([
-    { label: 'Development', value: true },
-    { label: 'Graphic design', value: false }
+    { label: 'Development', value: false },
+    { label: 'Graphic design', value: true }
   ]);
 
   const handleButtonsChange = () => (label) => {

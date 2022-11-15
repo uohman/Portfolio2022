@@ -58,18 +58,6 @@ export const SecondSubheading = styled.h3`
     color: var(--color-accent);
 `
 
-export const Title = styled.h3`
-    font-family: var(--font-main);
-    font-weight: 700;
-    font-size: 22px;
-    text-align: left;
-    color: var(--color-accent);
-
-    :hover {
-      color: var(--color-lighterAccent);
-    }
-`
-
 export const Description = styled.p`
     font-family: var(--font-secondary);
     font-weight: 400;
