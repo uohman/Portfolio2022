@@ -71,17 +71,3 @@ button:focus{
   color: var(--color-accent);
   opacity: 1;
 }
-
-.true:active {
-  color: green;
-}
-
-/* button:last-child {
-  border-radius: 0 1.25rem 1.25rem 0;
-  border: 0.0625rem solid black;
-}
-
-button:first-child {
-  border-radius: 1.25rem 0 0 1.25rem;
-  border: 1px solid black;
-} */

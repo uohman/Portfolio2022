@@ -12,11 +12,11 @@
         },
         {
         "id": 2,
-        "tech": "/Images/Eden-flowers-2.png"
+        "img_src": "/Images/Eden-flowers-2.png"
         },
         {
         "id": 3,
-        "tech": ""
+        "img_src": ""
         }
     ]
     },
@@ -33,11 +33,11 @@
           },
           {
           "id": 2,
-          "tech": "/Images/De-bergtagna-2.png"
+          "img_src": "/Images/De-bergtagna-2.png"
           },
           {
           "id": 3,
-          "tech": "/Images/De-bergtagna-3.png"
+          "img_src": "/Images/De-bergtagna-3.png"
           }
       ]
       }

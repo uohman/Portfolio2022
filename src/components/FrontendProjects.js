@@ -1,25 +1,18 @@
 import React from 'react'
 import projects from 'data.json'
 import { OuterWrapperBeige, InnerWrapper } from 'GlobalStyles';
-import styled from 'styled-components/macro'
+import styled from 'styled-components/macro';
+import { OtherProjects } from './OtherProjects';
 
 export const FrontendProjects = () => {
   return (
     <OuterWrapperBeige>
       <InnerWrapper>
-        {/* <Subheading><span>Featured projects</span></Subheading> */}
-        {/* <SecondSubheading>Frontend development</SecondSubheading> */}
-        {/* <ButtonWrapper>
-          <button type="button" onClick={handleChange}>Graphic</button>
-          <button type="button" onClick={handleChange}>Frontend</button>
-        </ButtonWrapper> */}
-
         {projects.map((project) => (
           <ProjectWrapper key={project.id}>
             <a href={project.url} target="_blank" rel="noreferrer">
               <div className="image-container">
                 <div className="project__image"><img src={project.img_src} alt="Project" /></div>
-                <div className="after" />
               </div>
             </a>
             <StyledText>
@@ -34,7 +27,7 @@ export const FrontendProjects = () => {
             </StyledText>
           </ProjectWrapper>
         ))}
-
+        <OtherProjects />
       </InnerWrapper>
     </OuterWrapperBeige>
   )

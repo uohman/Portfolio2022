@@ -2,33 +2,23 @@ import React from 'react'
 import projects from 'graphic-data.json'
 import { OuterWrapperBeige, InnerWrapper } from 'GlobalStyles';
 import styled from 'styled-components/macro'
+import { CarouselSliderEden, CarouselSliderBergtagna } from './CarouselSlider';
 
 export const GraphicDesignProjects = () => {
   return (
     <OuterWrapperBeige>
       <InnerWrapper>
+        <CarouselSliderEden />
         {projects.map((project) => (
           <ProjectWrapper key={project.id}>
-            <div className="image-container">
-              {project.images.map((image) => (
-                <div className="project__image" key={image.id}><img src={image.img_src} alt="Project" /></div>
-              ))}
-            </div>
-
             <Title>{project.title}</Title>
             <Column>
-
               <Subtitle>Client:</Subtitle><Text>{project.client}</Text>
               <Subtitle>What I did:</Subtitle><Text>{project.whatIDid}</Text>
             </Column>
             <Column>
               <Text>{project.description}</Text>
             </Column>
-            {/* <StyledTags>
-                {project.tags.map((tag) => (
-                  <li key={tag.id}>{tag.tech}</li>))}
-              </StyledTags> */}
-
           </ProjectWrapper>
         ))}
       </InnerWrapper>

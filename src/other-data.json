@@ -1,0 +1,98 @@
+[
+    {
+    "title": "Weather app",
+    "id": 1,
+    "img_src": "/Images/Weather-app.png",
+    "title-description": "An app that tells today's weather",
+    "description": "A simple weather app that tells today's weather and a 5-day forecast using a weather API.",
+    "repo-name": "project-weather-app",
+    "url": "https://github.com/uohman/project-weather-app",
+    "url_netlify": "https://tourmaline-sable-678f53.netlify.app/",
+    "tags": [
+        {
+        "id": 1,
+        "tech": "JavaScript"
+        },
+        {
+        "id": 2,
+        "tech": "HTML"
+        },
+        {
+        "id": 3,
+        "tech": "CSS"
+        }
+    ]
+    },
+    {
+        "title": "Weather app",
+        "id": 2,
+        "img_src": "/Images/Weather-app.png",
+        "title-description": "An app that tells today's weather",
+        "description": "A simple weather app that tells today's weather and a 5-day forecast using a weather API.",
+        "repo-name": "project-weather-app",
+        "url": "https://github.com/uohman/project-weather-app",
+        "url_netlify": "https://tourmaline-sable-678f53.netlify.app/",
+        "tags": [
+            {
+            "id": 1,
+            "tech": "JavaScript"
+            },
+            {
+            "id": 2,
+            "tech": "HTML"
+            },
+            {
+            "id": 3,
+            "tech": "CSS"
+            }
+        ]
+        },
+        {
+            "title": "Weather app",
+            "id": 3,
+            "img_src": "/Images/Weather-app.png",
+            "title-description": "An app that tells today's weather",
+            "description": "A simple weather app that tells today's weather and a 5-day forecast using a weather API.",
+            "repo-name": "project-weather-app",
+            "url": "https://github.com/uohman/project-weather-app",
+            "url_netlify": "https://tourmaline-sable-678f53.netlify.app/",
+            "tags": [
+                {
+                "id": 1,
+                "tech": "JavaScript"
+                },
+                {
+                "id": 2,
+                "tech": "HTML"
+                },
+                {
+                "id": 3,
+                "tech": "CSS"
+                }
+            ]
+            },
+            {
+                "title": "Weather app",
+                "id": 4,
+                "img_src": "/Images/Weather-app.png",
+                "title-description": "An app that tells today's weather",
+                "description": "A simple weather app that tells today's weather and a 5-day forecast using a weather API.",
+                "repo-name": "project-weather-app",
+                "url": "https://github.com/uohman/project-weather-app",
+                "url_netlify": "https://tourmaline-sable-678f53.netlify.app/",
+                "tags": [
+                    {
+                    "id": 1,
+                    "tech": "JavaScript"
+                    },
+                    {
+                    "id": 2,
+                    "tech": "HTML"
+                    },
+                    {
+                    "id": 3,
+                    "tech": "CSS"
+                    }
+                ]
+                }
+]

@@ -1,0 +1,21 @@
+/* .slider-container {
+    position: relative;
+    width: 100vw!important;
+    margin: 0!important;
+  }
+
+.slider-list {
+    height: auto!important;
+}
+
+.slider-slide {
+    position: sticky!important;
+} */
+
+/* .slider > .slider-frame > .slider-list {
+    width: auto!important;
+  } */
+
+  .slide img {
+    width: 100%;
+  }

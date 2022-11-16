@@ -44,7 +44,7 @@ export const Thoughts = () => {
 };
 
 export const ItemWrapper = styled.div`
-    margin: 5vh 0;
+    margin: 5vh 0 2vh;
 
     .thought__image img{
             width: 32vw;
