@@ -46,7 +46,11 @@ export const ProjectWrapper = styled.article`
     margin: 5vh 0;
 
     &:nth-child(odd) {
-    flex-direction: row-reverse;
+      flex-direction: row-reverse;
+    }
+
+    a {
+      cursor: pointer;
     }
 
 /*     .image-container{

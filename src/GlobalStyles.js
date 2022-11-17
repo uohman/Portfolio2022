@@ -67,23 +67,4 @@ export const Description = styled.p`
     padding: 10px 0;    
 `
 
-export const StyledGrid = styled.section`
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    justify-content: center;
-    align-content: center;
-    gap: 30px;
-    margin: 0 auto;
-    max-width: 50vw;
-
-    @media (max-width: 767.98px){
-
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        justify-content: center;
-        align-content: center;
-        gap: 30px;
-    }
-`
-
 export default GlobalStyles;

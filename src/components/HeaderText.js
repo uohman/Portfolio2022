@@ -1,3 +1,4 @@
+/* eslint-disable max-len */
 import React from 'react'
 import styled from 'styled-components/macro'
 import { OuterWrapperBeige, InnerWrapper } from 'GlobalStyles';
@@ -10,8 +11,7 @@ export const HeaderText = () => {
           Hello! Nice to meet you!
         </Heading>
         <BigText>
-      I am a creative and experienced graphic designer with frontend developer skills.
-      I’m all about problem solving and creating awesome, meaningful products for people to love.
+        I’m a creative and experienced graphic designer who added frontend developer to my title and now I’m all about creating awesome looking and meaningful products combining my professions.
         </BigText>
       </InnerWrapper>
     </OuterWrapperBeige>
@@ -29,7 +29,7 @@ const Heading = styled.h1`
 `
 
 const BigText = styled.p`
-    margin-left: 10vw;
+    // margin-left: 12vw;
     padding: 50px 0;
     font-family: var(--font-main);
     font-weight: 700;
@@ -37,4 +37,7 @@ const BigText = styled.p`
     font-size: 20px;
     line-height: 23px;
     color: var(--color-accent);
+    max-width: 650px;
+    margin: 0 0 0 auto;
+    
 `

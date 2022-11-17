@@ -1,26 +1,58 @@
+/* eslint-disable max-len */
 import React from 'react'
-import projects from 'graphic-data.json'
 import { OuterWrapperBeige, InnerWrapper } from 'GlobalStyles';
 import styled from 'styled-components/macro'
-import { CarouselSliderEden, CarouselSliderBergtagna } from './CarouselSlider';
+import { CarouselSliderEden, CarouselSliderBergtagna, CarouselSliderDuellen } from './CarouselSlider';
 
 export const GraphicDesignProjects = () => {
   return (
     <OuterWrapperBeige>
       <InnerWrapper>
+
         <CarouselSliderEden />
-        {projects.map((project) => (
-          <ProjectWrapper key={project.id}>
-            <Title>{project.title}</Title>
-            <Column>
-              <Subtitle>Client:</Subtitle><Text>{project.client}</Text>
-              <Subtitle>What I did:</Subtitle><Text>{project.whatIDid}</Text>
-            </Column>
-            <Column>
-              <Text>{project.description}</Text>
-            </Column>
-          </ProjectWrapper>
-        ))}
+        <ProjectWrapper>
+          <Title>Eden flowers</Title>
+          <Column>
+            <Subtitle>Client:</Subtitle><Text>Eden flowers</Text>
+            <Subtitle>What I did:</Subtitle><Text>Branding suite, logotype</Text>
+          </Column>
+          <Column>
+            <Text>
+              Graphic profile and logotype for Eden Flowers, an online floristry.
+            </Text>
+          </Column>
+        </ProjectWrapper>
+
+        <CarouselSliderBergtagna />
+        <ProjectWrapper>
+          <Title>De Bergtagna</Title>
+          <Column>
+            <Subtitle>Client:</Subtitle>
+            <Text>Svenska litteratursällskapet i Finland/Finlands svenska folkmusikinstitut</Text>
+            <Subtitle>What I did:</Subtitle><Text>Layout</Text>
+          </Column>
+          <Column>
+            <Text>
+              Album cover, booklet and label for “De Bergtagna” by Ostrobothnia Jazz Sextet.
+            </Text>
+          </Column>
+        </ProjectWrapper>
+
+        <CarouselSliderDuellen />
+        <ProjectWrapper>
+          <Title>Duellen 2.0</Title>
+          <Column>
+            <Subtitle>Client:</Subtitle>
+            <Text>Förlaget M</Text>
+            <Subtitle>What I did:</Subtitle><Text>Book design & illustration</Text>
+          </Column>
+          <Column>
+            <Text>
+            Book cover and inlay for the quiz book “Duellen 2.0” by Jesper von Hertzen.
+            </Text>
+          </Column>
+        </ProjectWrapper>
+
       </InnerWrapper>
     </OuterWrapperBeige>
   )
@@ -37,16 +69,10 @@ export const ProjectWrapper = styled.article`
     flex-direction: row;
     flex-wrap: wrap;
     width: 100%;
-    margin: 5vh 0; 
-
-    .project__image img{
-            width: 100%;
-            height: auto;
-        }
+    gap: 0 5vw;
 `
 
 export const Column = styled.div`
-    /* width: 30vw; */
     display: flex;
     flex-direction: column;
     flex-basis: 100%;

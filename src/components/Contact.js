@@ -4,7 +4,7 @@ import styled from 'styled-components/macro'
 export const Contact = () => {
   return (
     <ContainerColored>
-      <div className="contact__headline">Contact</div>
+      <div className="contact__headline">Say hi!</div>
       <div className="contact__details">Ulrika Öhman<br />040-706 1252<br />Send me an <a href="mailto:ulrikalovisa@gmail.com">e-mail</a></div>
 
       <IconsWrapper>

@@ -13,7 +13,7 @@ export const OtherProjects = () => {
             <StyledTitleAnchor href={project.url} target="_blank" rel="noreferrer">
               <Title>{project.title}</Title>
             </StyledTitleAnchor>
-            <div className="project__description">{project.description}<br />(Watch live demo <StyledLiveDemoAnchor href={project.url_netlify}>here</StyledLiveDemoAnchor>.)</div>
+            <div className="project__description">{project.description} (Watch live demo <StyledLiveDemoAnchor href={project.url_netlify}>here</StyledLiveDemoAnchor>.)</div>
             <StyledTags>
               {project.tags.map((tag) => (
                 <li key={tag.id}>{tag.tech}</li>))}

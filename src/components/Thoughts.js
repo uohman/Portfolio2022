@@ -1,5 +1,5 @@
 import React from 'react'
-import { InnerWrapper, OuterWrapperWhite, Subheading, Description, StyledGrid } from 'GlobalStyles';
+import { InnerWrapper, OuterWrapperWhite, Subheading, Description } from 'GlobalStyles';
 import styled from 'styled-components/macro'
 import thoughtOneImage from 'Images/My-thoughts-1.png'
 import placeHolderImage from 'Images/Placeholder-img.png'
@@ -26,7 +26,10 @@ export const Thoughts = () => {
 
           <ItemWrapper>
             <a href="#" target="_blank" rel="noreferrer">
-              <div className="thought__image"><img src={placeHolderImage} alt="My crush on coding" /></div>
+              <div className="thought__image"><img
+                src={placeHolderImage}
+                alt="My crush on coding" />
+              </div>
               <div className="thought__text" />
               <div className="thought__date">October 2022</div>
               <Title>Thought 2 headline</Title>
@@ -42,6 +45,25 @@ export const Thoughts = () => {
     </OuterWrapperWhite>
   )
 };
+
+export const StyledGrid = styled.section`
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-content: center;
+    gap: 30px;
+    margin: 0 auto;
+    max-width: 50vw;
+
+    @media (max-width: 767.98px){
+
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        justify-content: center;
+        align-content: center;
+        gap: 30px;
+    }
+`
 
 export const ItemWrapper = styled.div`
     margin: 5vh 0 2vh;

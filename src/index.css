@@ -71,3 +71,7 @@ button:focus{
   color: var(--color-accent);
   opacity: 1;
 }
+
+.slide img {
+  width: 100%;
+}
