@@ -20,6 +20,7 @@ const NameAndTitleContainer = styled.section`
     // outline: 1px solid red;
     margin: 3vh 3vh 1.5vh;
     font-family: var(--font-main);
+    font-weight: 500;
 
     h4 {
       color: var(--color-accent);
