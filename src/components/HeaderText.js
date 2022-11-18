@@ -11,7 +11,7 @@ export const HeaderText = () => {
           Hello! Nice to meet you!
         </Heading>
         <BigText>
-        I’m a creative and experienced graphic designer who added frontend developer to my title and now I’m all about creating awesome looking and meaningful products combining my professions.
+        I’m a creative and experienced graphic designer who added frontend developer to my title and now I’m all about creating awesome looking and meaningful products combining my two professions.
         </BigText>
       </InnerWrapper>
     </OuterWrapperBeige>

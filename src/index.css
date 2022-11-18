@@ -50,7 +50,6 @@ code {
 button {
   background-color: transparent;
   color: var(--color-accent);
-  opacity: 0.5;
   border-style: none;
   font-family: var(--font-main);
   font-weight: 400;
@@ -64,12 +63,6 @@ button {
 
 button:hover {
   color: var(--color-lighterAccent);
-}
-
-button:focus{
-  text-decoration: underline;
-  color: var(--color-accent);
-  opacity: 1;
 }
 
 .slide img {
