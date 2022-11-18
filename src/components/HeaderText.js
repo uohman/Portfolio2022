@@ -20,7 +20,7 @@ export const HeaderText = () => {
 
 const Heading = styled.h1`
     font-family: var(--font-main);
-    font-weight: 700;
+    // font-weight: 700;
     text-align: left;
     font-size: 60px;
     line-height: 60px;
@@ -32,7 +32,7 @@ const BigText = styled.p`
     // margin-left: 12vw;
     padding: 50px 0;
     font-family: var(--font-main);
-    font-weight: 700;
+    // font-weight: 700;
     text-align: right;
     font-size: 20px;
     line-height: 23px;
