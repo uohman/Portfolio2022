@@ -10,7 +10,7 @@
   --color-accent: #db4f60;
   --color-lighterAccent: #eea1ab;
 
-  --font-main: 'Circular Std', sans-serif;
+  --font-main: 'Montserrat', sans-serif;
   --font-secondary: 'Inconsolata', monospace;
 }
 
@@ -52,7 +52,7 @@ button {
   color: var(--color-accent);
   border-style: none;
   font-family: var(--font-main);
-  font-weight: 400;
+  font-weight: 600;
   font-size: 20px;
   letter-spacing: 2px;
   text-align: center;

@@ -27,7 +27,7 @@ export const OtherProjects = () => {
 
 export const OtherProjectsTitle = styled.h3`
     font-family: var(--font-main);
-    // font-weight: 700;
+    font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 1px;
     text-align: center;

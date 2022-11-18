@@ -39,7 +39,7 @@ export const InnerWrapper = styled.section`
 
 export const Subheading = styled.h2`
     font-family: var(--font-main);
-    //font-weight: medium;
+    font-weight: 600;
     text-align: center;
     font-size: 30px;
     margin-top: 10vh;
