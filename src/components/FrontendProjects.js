@@ -53,37 +53,6 @@ export const ProjectWrapper = styled.article`
       cursor: pointer;
     }
 
-/*     .image-container{
-                position: relative;
-            }
-
-             .image-container .after {
-                position: absolute;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 98.5%;
-                background: #eea1ab75;
-            }
-
-            .image-container:hover .after {
-                display: block;
-                display: none;
-                color: #FFF;
-            } */
-
-          /*   .after{
-                color: white;
-                font-family: var(--font-secondary);
-                font-weight: 400;
-                font-size: 15px;
-                text-transform: uppercase;
-                text-align: center;
-            }  */
-
     .project__image img{
             width: 32vw;
             height: auto;
@@ -98,6 +67,17 @@ export const ProjectWrapper = styled.article`
                     padding: 10px 0;
                 }
 
+    @media (max-width: 767.98px) {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        justify-content: center;
+        align-content: center;
+      
+        .project__image img{
+            width: 80vw;
+            //height: auto;
+        }
+    }
 `
 
 export const Title = styled.h3`
@@ -110,12 +90,20 @@ export const Title = styled.h3`
     :hover {
       color: var(--color-lighterAccent);
     }
+
+    @media (max-width: 767.98px) {
+        margin-top: 10px;
+    }
 `
 
 export const StyledText = styled.div`
     width: 28vw;
     display: flex;
     flex-direction: column;
+
+    @media (max-width: 767.98px) {
+      width: 80vw;
+    }
 `
 
 export const StyledTitleAnchor = styled.a`

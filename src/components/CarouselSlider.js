@@ -2,8 +2,6 @@
 import Carousel from 'nuka-carousel';
 import styled from 'styled-components/macro'
 
-import './CarouselSlider.css'
-
 export const CarouselSliderEden = () => {
   return (
     <CarouselWrapper>

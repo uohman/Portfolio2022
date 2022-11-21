@@ -90,6 +90,14 @@ export const ItemWrapper = styled.div`
         color: black;
     }
 
+    @media (max-width: 767.98px) {
+      margin: 2vh 0 0;
+
+        .thought__image img{
+            width: 80vw;
+            height: auto;
+        }
+    }
 `
 
 export const Title = styled.h3`

@@ -35,6 +35,10 @@ export const OuterWrapperWhite = styled.section`
 export const InnerWrapper = styled.section`
     width: 65vw;
     margin: 0 auto;
+
+    @media (max-width: 767.98px) {
+    width: 80vw;
+    }
 `
 
 export const Subheading = styled.h2`

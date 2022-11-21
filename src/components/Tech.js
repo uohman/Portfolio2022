@@ -21,6 +21,11 @@ const SectionText = styled.p`
     font-weight: 400;
     text-align: center;
     font-size: 30px;
-    line-height: 35px;
+    line-height: 40px;
     color: #000;
+
+    @media (max-width: 767.98px) {
+      font-size: 25px;
+      line-height: 32px;
+    }
 `

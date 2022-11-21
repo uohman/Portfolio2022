@@ -70,6 +70,10 @@ export const StyledText = styled.div`
       width: 50vw;
       display: flex;
       flex-direction: column;
+
+      @media (max-width: 767.98px) {
+        width: 80vw;
+      }
   `
 
 export const StyledTitleAnchor = styled.a`

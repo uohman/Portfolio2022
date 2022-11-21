@@ -26,6 +26,11 @@ const Heading = styled.h1`
     line-height: 60px;
     margin-top: 44vh;
     color: var(--color-accent);
+
+    @media (max-width: 767.98px) {
+    font-size: 40px;
+    line-height: 40px;
+    }
 `
 
 const BigText = styled.p`
@@ -37,7 +42,11 @@ const BigText = styled.p`
     font-size: 20px;
     line-height: 23px;
     color: var(--color-accent);
-    max-width: 650px;
+    max-width: 720px;
     margin: 0 0 0 auto;
     
+    @media (max-width: 767.98px) {
+    font-size: 18px;
+    line-height: 21px;
+    }
 `
