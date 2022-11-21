@@ -11,7 +11,7 @@ export const NameAndTitle = () => {
       <hr
         style={{
           border: '1px solid var(--color-accent)',
-          margin: '0 20vh 0 2vh'
+          margin: '0 60px 0 18px'
         }} />
     </Wrapper>
   )
@@ -28,7 +28,7 @@ const Wrapper = styled.div`
 
 const NameAndTitleContainer = styled.section`
     // outline: 1px solid red;
-    margin: 2vh 2vh 0.8vh;
+    margin: 18px 18px 6px;
     font-family: var(--font-main);
     font-weight: 400;
 
