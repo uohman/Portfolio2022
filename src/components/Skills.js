@@ -1,3 +1,4 @@
+/* eslint-disable max-len */
 import React from 'react'
 import { InnerWrapper, OuterWrapperBeige, Subheading } from 'GlobalStyles';
 import styled from 'styled-components/macro'
@@ -11,7 +12,7 @@ export const Skills = () => {
           <div className="column1">
             <div className="column__headline">Code</div>
             <div className="column__skills">
-            HTML5<br />CSS3<br />JavaScript ES6<br />React<br />Styled Components<br />GitHub
+            HTML5<br />CSS3<br />JavaScript ES6<br />React<br />Redux<br />Node.js<br />Express<br />MongoDB<br />Styled Components<br />GitHub
             </div>
           </div>
 
@@ -19,7 +20,7 @@ export const Skills = () => {
             <div className="column__headline">Toolbox</div>
             <div className="column__skills">
             Adobe Photoshop<br />Adobe Illustrator<br />Adobe InDesign<br />
-            Figma<br />Keynote<br />Slack
+            Figma<br />Postman<br />Keynote<br />Slack
             </div>
           </div>
 
@@ -40,7 +41,7 @@ export const StyledSkills = styled.div`
     display: flex;
     justify-content: center;
     align-content: center;
-    margin: 3vh auto 2vh;
+    margin: 3vh auto 0;
     max-width: 768px;
 
     .column1, .column2, .column3 {
@@ -73,8 +74,8 @@ export const StyledSkills = styled.div`
     @media (max-width: 767.98px){
     flex-wrap: wrap;
 
-        .column1, .column2, .column3{
-        height: 210px;
+        .column1, .column2 {
+          margin-bottom: 10px;
         }
     }
 `

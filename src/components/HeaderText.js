@@ -30,23 +30,25 @@ const Heading = styled.h1`
     @media (max-width: 767.98px) {
     font-size: 40px;
     line-height: 40px;
+    margin-top: 5vh;
     }
 `
 
 const BigText = styled.p`
     // margin-left: 12vw;
-    padding: 50px 0;
+    padding: 50px 0 25px;
     font-family: var(--font-main);
     font-weight: 600;
     text-align: right;
     font-size: 20px;
-    line-height: 23px;
+    line-height: 24px;
     color: var(--color-accent);
     max-width: 720px;
     margin: 0 0 0 auto;
     
     @media (max-width: 767.98px) {
-    font-size: 18px;
-    line-height: 21px;
+      padding: 30px 0;
+      font-size: 22px;
+      line-height: 26px;
     }
 `

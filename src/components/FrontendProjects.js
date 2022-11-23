@@ -33,12 +33,6 @@ export const FrontendProjects = () => {
   )
 };
 
-export const ButtonWrapper = styled.div`
-    display: flex;
-    align-items: center;
-    justify-content: center;
-`
-
 export const ProjectWrapper = styled.article`
     display: flex;
     align-items: center;
@@ -75,7 +69,6 @@ export const ProjectWrapper = styled.article`
       
         .project__image img{
             width: 80vw;
-            //height: auto;
         }
     }
 `

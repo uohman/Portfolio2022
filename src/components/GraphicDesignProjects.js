@@ -70,6 +70,10 @@ export const ProjectWrapper = styled.article`
     flex-wrap: wrap;
     width: 100%;
     gap: 0 5vw;
+
+    @media (max-width: 767.98px) {
+      display: block;
+    }
 `
 
 export const Column = styled.div`

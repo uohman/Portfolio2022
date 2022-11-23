@@ -21,7 +21,7 @@ const Wrapper = styled.div`
     @media (max-width: 767.98px) {
 
         hr {
-          display: none;
+          
         }
     }
 `

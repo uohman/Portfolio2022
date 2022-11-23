@@ -40,4 +40,5 @@ export const CarouselSliderDuellen = () => {
 
 export const CarouselWrapper = styled.div`
     margin: 5vh 0 3vh; 
+    z-index: 1;
 `

@@ -8,8 +8,8 @@ export const Tech = () => {
       <InnerWrapper>
         <Subheading><span>Tech</span></Subheading>
         <SectionText>
-        HTML, CSS, Flexbox, JavaScript, ES6, JSX, React, React Hooks, Redux,
-        Node.js, Mongo DB, Web Accessibly, API:s, mob-programming, pair-programming, GitHub.
+        HTML, CSS, Flexbox, <span style={{ textDecoration: 'underline' }}>JavaScript ES6</span>, JSX, <span style={{ textDecoration: 'underline' }}>React</span>, <span style={{ textDecoration: 'underline' }}>Redux</span>,
+        Node.js, Mongo DB, Web Accessibly, API:s, mob-programming, pair-programming, GitHub
         </SectionText>
       </InnerWrapper>
     </OuterWrapperWhite>

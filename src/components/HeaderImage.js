@@ -20,6 +20,16 @@ export const HeaderImage = () => {
 const StyledImages = styled.section`
   position: relative;
 
+  @media (max-width: 767.98px) {
+    display: flex;
+    justify-content: center;
+
+    img {
+      flex-direction: column;
+      width: 100%;
+    }
+  }
+
   .ProfileImage {
     position: absolute;
     width: 200px;
@@ -29,6 +39,14 @@ const StyledImages = styled.section`
     object-fit: cover;
     float: right;
     margin-top: 14vh;
+
+    @media (max-width: 767.98px) {
+      position: relative;
+      right: 0;
+      width: 60vw;
+      height: 60vw;
+      margin-top: 7vh;
+    }
   }
 
   .Stamp {
@@ -40,10 +58,14 @@ const StyledImages = styled.section`
     float: right;
     transition: all 0.6s ease-in-out 0s;
 
+    @media (max-width: 767.98px) {
+      top: 31vh;
+    }
+
     :hover {
       cursor: default;
-    transform: rotate(180deg);
-    transition: all 0.6s ease-in-out 0s;
+      transform: rotate(180deg);
+      transition: all 0.6s ease-in-out 0s;
     }
   }
 `

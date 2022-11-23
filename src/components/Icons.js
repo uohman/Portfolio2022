@@ -24,6 +24,7 @@ const IconsWrapper = styled.div`
     position: fixed;
     right: 18px;
     top: 18px;
+    z-index: 2;
 
     img {
         width: 25px;

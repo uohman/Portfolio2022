@@ -77,3 +77,8 @@ button:hover {
 .slide img {
   width: 100%;
 }
+
+.slider-control-centerright button, .slider-control-centerleft button {
+  font-size: 12px;
+  margin: 0 10px;
+}

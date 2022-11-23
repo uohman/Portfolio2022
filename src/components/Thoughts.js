@@ -2,29 +2,31 @@ import React from 'react'
 import { InnerWrapper, OuterWrapperWhite, Subheading, Description } from 'GlobalStyles';
 import styled from 'styled-components/macro'
 import thoughtOneImage from 'Images/My-thoughts-1.png'
-import placeHolderImage from 'Images/Placeholder-img.png'
+// import placeHolderImage from 'Images/Placeholder-img.png'
 
 export const Thoughts = () => {
   return (
     <OuterWrapperWhite>
       <InnerWrapper>
         <Subheading><span>My thoughts about code</span></Subheading>
-        <StyledGrid>
+        {/* <StyledGrid> */}
 
-          <ItemWrapper>
-            <a href="https://medium.com/@ulrikalovisa/my-crush-on-coding-534682bd3d" target="_blank" rel="noreferrer">
-              <div className="thought__image"><img src={thoughtOneImage} alt="My crush on coding" /></div>
-              <div className="thought__text" />
-              <div className="thought__date">October 2022</div>
-              <Title>My crush on coding</Title>
-              <Description>
+        <ItemWrapper>
+          <a href="https://medium.com/@ulrikalovisa/my-crush-on-coding-534682bd3d" target="_blank" rel="noreferrer">
+
+            <div className="thought__image"><img src={thoughtOneImage} alt="My crush on coding" /></div>
+            <div className="thought__text" />
+            <div className="thought__date">October 2022</div>
+            <Title>My crush on coding</Title>
+            <Description>
                 My journey into coding and how I feel about it 8 weeks into the boot camp.
                 (Spoiler alert: I love it!)
-              </Description>
-            </a>
-          </ItemWrapper>
+            </Description>
 
-          <ItemWrapper>
+          </a>
+        </ItemWrapper>
+
+        {/* <ItemWrapper>
             <a href="#" target="_blank" rel="noreferrer">
               <div className="thought__image"><img
                 src={placeHolderImage}
@@ -37,9 +39,9 @@ export const Thoughts = () => {
                 Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
               </Description>
             </a>
-          </ItemWrapper>
+          </ItemWrapper> */}
 
-        </StyledGrid>
+        {/* </StyledGrid> */}
 
       </InnerWrapper>
     </OuterWrapperWhite>
@@ -56,21 +58,31 @@ export const StyledGrid = styled.section`
     max-width: 50vw;
 
     @media (max-width: 767.98px){
-
-        display: grid;
         grid-template-columns: repeat(1, 1fr);
         justify-content: center;
         align-content: center;
+        display: flex;
         gap: 30px;
     }
 `
 
 export const ItemWrapper = styled.div`
-    margin: 5vh 0 2vh;
+    //outline: 1px solid red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5vh 30vw 0;
+    
+    .thought__image{
+        justify-content: center;
+        align-content: center;
+        display: flex;
+        margin: 0 auto;
+    }
 
     .thought__image img{
-            width: 32vw;
-            height: auto;
+      //outline: 1px solid red;
+            
         }
 
         .thought__date{
@@ -91,7 +103,10 @@ export const ItemWrapper = styled.div`
     }
 
     @media (max-width: 767.98px) {
-      margin: 2vh 0 0;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        justify-content: center;
+        align-content: center;
 
         .thought__image img{
             width: 80vw;
