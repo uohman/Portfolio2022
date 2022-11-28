@@ -44,7 +44,7 @@ const NameAndTitleContainer = styled.section`
 
     @media (max-width: 767.98px) {
 
-      margin: 2vh 2vh 0.8vh;
+      //margin: 2vh 2vh 0.8vh;
       
       h4 {
         font-size: 0.8em;
