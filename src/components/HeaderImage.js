@@ -38,7 +38,7 @@ const StyledImages = styled.section`
     border-radius: 50%;
     object-fit: cover;
     float: right;
-    margin-top: 14vh;
+    margin-top: 110px;
 
     @media (max-width: 767.98px) {
       position: relative;
@@ -54,13 +54,17 @@ const StyledImages = styled.section`
     width: 140px;
     height: 140px;
     right: 0;
-    top: 32vh;
+    top: 230px;
     float: right;
     transition: all 0.6s ease-in-out 0s;
 
     @media (max-width: 767.98px) {
       display: none;
       /* top: 31vh; */
+    }
+
+    @media (min-width: 1400px) {
+      /* top: 32vh; */
     }
 
     :hover {

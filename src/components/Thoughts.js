@@ -166,4 +166,8 @@ export const Title = styled.h3`
     :hover {
       color: var(--color-lighterAccent);
     }
+
+    @media (min-width: 1400px) {
+      font-size: 22px;
+    }
 `
