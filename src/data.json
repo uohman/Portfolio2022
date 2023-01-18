@@ -1,7 +1,39 @@
 [
     {
-    "title": "Labyrinth",
+    "title": "StreetSmart",
     "id": 1,
+    "img_src": "/Images/StreetSmart.png",
+    "title-description": "My final project.",
+    "description": "My final fullstack project for the Technigo frontend developer bootcamp. StreetSmart is a quiz game where the task is to identify a destination location based on a series of clues.",
+    "repo-name": "final-project",
+    "url": "https://github.com/uohman/final-project",
+    "url_netlify": "https://streetsmart.netlify.app/",
+    "tags": [
+      {
+      "id": 1,
+      "tech": "React"
+      },
+      {
+      "id": 2,
+      "tech": "Redux"
+      },
+      {
+      "id": 3,
+      "tech": "Styled-components"
+      },
+      {
+        "id": 4,
+        "tech": "Node.js"
+      },
+      {
+        "id": 5,
+        "tech": "MongoDB"
+      }
+    ]
+    },
+    {
+    "title": "Labyrinth",
+    "id": 2,
     "img_src": "/Images/Labyrinth.png",
     "title-description": "A labyrinth game.",
     "description": "Labyrinth game that retrieves a list of actions from the backend and presents them to the user as interactable items.",
@@ -18,19 +50,14 @@
       "tech": "Redux"
       },
       {
-      "id": 3,
-      "tech": "HTML"
-      },
-      {
-        "id": 4,
-        "tech": "CSS"
+        "id": 3,
+        "tech": "Styled-components"
       }
     ]
     },
-
     {
       "title": "To-do list",
-      "id": 2,
+      "id": 3,
       "img_src": "/Images/Todo-list.png",
       "title-description": "A to-do list created in React, using Redux.",
       "description": "A to-do list created in React, using Redux, made with reducers and functions that are relevant for a to-do app.",
@@ -47,22 +74,17 @@
         "tech": "Redux"
         },
         {
-        "id": 3,
-        "tech": "HTML"
-        },
-        {
           "id": 3,
-          "tech": "CSS"
+          "tech": "Styled-components"
         }
     ]
     },
-
     {
         "title": "Happy thoughts",
-        "id": 3,
+        "id": 4,
         "img_src": "/Images/Happy-thoughts.png",
         "title-description": "A site where you can send happy thoughts",
-        "description": "Site built with React where you can send happy thoughts, list all thoughts and like them.",
+        "description": "Site built with React where you can send happy thoughts, list all thoughts and like them. The project was later completed with a self-made backend, build with Node.js (Express/Mongoose) and MongoDB.",
         "repo-name": "project-happy-thoughts",
         "url": "https://github.com/uohman/project-happy-thoughts",
         "url_netlify": "https://loquacious-kitten-5cad9c.netlify.app/",
@@ -72,19 +94,26 @@
             "tech": "React"
             },
             {
-            "id": 2,
-            "tech": "HTML"
+              "id": 2,
+              "tech": "CSS"
             },
             {
             "id": 3,
-            "tech": "CSS"
+            "tech": "Node.js"
+            },
+            {
+            "id": 4,
+            "tech": "Express"
+            },
+            {
+            "id": 5,
+            "tech": "MongoDB"
             }
       ]
-    },
-      
+    }, 
     {
         "title": "Personal greeting",
-        "id": 4,
+        "id": 5,
         "img_src": "/Images/Personal-greeting.png",
         "title-description": "A site where you can make a personal greeting",
         "description": "A Typeform-like survey, built with React state and controlled forms.",

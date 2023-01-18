@@ -109,6 +109,7 @@ export const StyledLiveDemoAnchor = styled.a`
 
 export const StyledTags = styled.div`
     display: flex;
+    flex-wrap: wrap;
     list-style: none;
 
     li {
@@ -119,6 +120,6 @@ export const StyledTags = styled.div`
     font-size: 14px; 
     line-height: 12px;
     padding: 3px 10px;
-    margin: 3px 6px 10px 0;
+    margin: 3px 6px 4px 0;
     }  
 `
