@@ -22,6 +22,10 @@ export const OuterWrapperBeige = styled.section`
     align-items: center;
     justify-content: center;
     padding: 0 0 10vh;
+
+    @media (max-width: 767.98px) {
+        padding: 0 0 8vh;
+    }
 `
 
 export const OuterWrapperWhite = styled.section`
@@ -31,6 +35,10 @@ export const OuterWrapperWhite = styled.section`
     align-items: center;
     justify-content: center;
     padding: 0 0 10vh;
+
+    @media (max-width: 767.98px) {
+        padding: 0 0 8vh;
+    }
 `
 export const InnerWrapper = styled.section`
     width: 65vw;
@@ -49,6 +57,10 @@ export const Subheading = styled.h2`
     margin-top: 10vh;
     padding-bottom: 2vh;
     color: var(--color-accent);
+
+    @media (max-width: 767.98px) {
+        margin-top: 8vh;;
+    }
 `
 
 export const SecondSubheading = styled.h3`

@@ -42,10 +42,10 @@ const StyledImages = styled.section`
 
     @media (max-width: 767.98px) {
       position: relative;
-      right: 0;
+      right: unset;
       width: 60vw;
       height: 60vw;
-      margin-top: 7vh;
+      margin-top: 5vh;
     }
   }
 
@@ -59,7 +59,8 @@ const StyledImages = styled.section`
     transition: all 0.6s ease-in-out 0s;
 
     @media (max-width: 767.98px) {
-      top: 31vh;
+      display: none;
+      /* top: 31vh; */
     }
 
     :hover {
