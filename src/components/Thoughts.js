@@ -36,7 +36,7 @@ export const Thoughts = () => {
               <div className="thought__date">January 2023</div>
               <Title>Not today imposter syndrome, not today.</Title>
               <Description>
-                Some of my thoughts on working on the final project for the Technigo frontend developer boot camp.
+                Some of my thoughts on working on the final project for the Technigo web development boot camp.
               </Description>
 
             </a>
@@ -165,6 +165,10 @@ export const Title = styled.h3`
 
     :hover {
       color: var(--color-lighterAccent);
+    }
+
+    @media (max-width: 767.98px) {
+      font-size: 20px;
     }
 
     @media (min-width: 1400px) {

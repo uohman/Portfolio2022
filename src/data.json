@@ -4,7 +4,7 @@
     "id": 1,
     "img_src": "/Images/StreetSmart.png",
     "title-description": "My final project.",
-    "description": "My final fullstack project for the Technigo frontend developer bootcamp. StreetSmart is a quiz game where the task is to identify a destination location based on a series of clues.",
+    "description": "My final fullstack project for the Technigo web development boot camp. StreetSmart is a quiz game where the task is to identify a destination location based on a series of clues.",
     "repo-name": "final-project",
     "url": "https://github.com/uohman/final-project",
     "url_netlify": "https://streetsmart.netlify.app/",
