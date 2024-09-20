@@ -5,10 +5,10 @@ export const Contact = () => {
   return (
     <ContainerColored>
       <div className="contact__headline">Say hi!</div>
-      <div className="contact__details">Ulrika Öhman<br />040-706 1252<br />Send me an <a href="mailto:ulrikalovisa@gmail.com">e-mail</a></div>
+      <div className="contact__details">Ulrika Fougstedt<br />040-706 1252<br />Send me an <a href="mailto:ulrikalovisa@gmail.com">e-mail</a></div>
 
       <IconsWrapper>
-        <a href="https://www.linkedin.com/in/ulrika-%C3%B6hman-2ab3056a/" target="_blank" rel="noreferrer">
+        <a href="https://www.linkedin.com/in/ulrika-fougstedt-2ab3056a/" target="_blank" rel="noreferrer">
           <img src="/Images/Linkedin-logo-white.svg" alt="Go to my LinkedIn page" />
           <p>LinkedIn</p>
         </a>

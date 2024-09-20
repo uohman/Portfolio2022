@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components/macro'
 import { OuterWrapperBeige, InnerWrapper } from 'GlobalStyles';
-import img from 'Images/Portfolio-image.jpg'
+import img from 'Images/Portfolio-image-2.JPG'
 
 export const HeaderImage = () => {
   return (

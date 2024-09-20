@@ -5,7 +5,7 @@ export const NameAndTitle = () => {
   return (
     <Wrapper>
       <NameAndTitleContainer>
-        <h4>Ulrika Öhman</h4>
+        <h4>Ulrika Fougstedt</h4>
         <h5>— frontend developer & graphic designer</h5>
       </NameAndTitleContainer>
       <hr
